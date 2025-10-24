@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Learning Log</title>
-    <p>Learning log helps you keep track of your learning, for any topic you're interested in.</p>
 </head>
 <body>
-
+    {% extends "learning_logs/base.html" %}
+    {% block content %}
+    <p>
+        Learning log helps you keep track of your learning, for any topic you're interested in.
+    </p>
+    {% endblock content %}
 </body>
 </html>
