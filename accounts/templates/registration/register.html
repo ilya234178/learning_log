@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% extends 'learning_logs/base.html' %}
+{% block content %}
+    <form action="{% url 'accounts:register' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_div }}
+        <button name="submit">register</button>
+    </form>
