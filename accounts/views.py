@@ -17,6 +17,6 @@ def register(request):
 
     #вывод пустой или недействительной формы
     context = {'form': form}
-    return render(request, 'accounts/register.html', context)
+    return render(request, 'registration/register.html', context)
 
 
